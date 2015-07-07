@@ -13,8 +13,8 @@ module.exports = {
   times: times,
   div: div,
   toString: toString,
-  valueOf: valueOf,
-  toJSON: valueOf
+  valueOf: toString,
+  toJSON: toString
 };
 
 function getPrecision(Big) {
@@ -43,8 +43,4 @@ function div(big, x) {
 
 function toString(big) {
   return big.toString();
-}
-
-function valueOf(big) {
-  return big.valueOf();
 }
