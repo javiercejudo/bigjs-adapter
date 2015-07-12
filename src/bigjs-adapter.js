@@ -26,22 +26,22 @@ function setPrecision(Big, n) {
   Big.DP = n;
 }
 
-function plus(big, x) {
-  return big.plus(x);
+function plus(x, y) {
+  return x.plus(y);
 }
 
-function minus(big, x) {
-  return big.minus(x);
+function minus(x, y) {
+  return x.minus(y);
 }
 
-function times(big, x) {
-  return big.times(x);
+function times(x, y) {
+  return x.times(y);
 }
 
-function div(big, x) {
-  return big.div(x);
+function div(x, y) {
+  return x.div(y);
 }
 
-function toString(big) {
-  return big.toString();
+function toString(x) {
+  return x.toString();
 }
