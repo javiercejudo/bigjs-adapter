@@ -9,7 +9,7 @@ var adapter = require('../src/bigjs-adapter');
 
 var Decimal = decimalFactory(adapter);
 
-describe('linear arbitrary precision with big.js', function() {
+describe('arbitrary precision with big.js', function() {
 
   describe('precision', function() {
     var initialPrecision = Decimal.getPrecision();
