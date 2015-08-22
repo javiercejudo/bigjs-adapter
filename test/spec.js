@@ -53,6 +53,11 @@ describe('arbitrary precision with big.js', function() {
         new Decimal('81').pow(new Decimal('0.5')).valueOf().should.be.exactly('9');
       }).should.throw('!pow!');
     });
+
+    it('should have a pow method with support for ints only', function() {
+      new Decimal('2').equals(new Decimal('2')).should.be.exactly(true);
+      new Decimal('2').equals(new Decimal('3')).should.be.exactly(false);
+    });
   });
 
   describe('toString, valueOf and JSON', function() {
