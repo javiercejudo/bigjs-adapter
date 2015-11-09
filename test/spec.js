@@ -54,7 +54,11 @@ describe('arbitrary precision with big.js', function() {
       }).should.throw('!pow!');
     });
 
-    it('should have a pow method with support for ints only', function() {
+    it('should have an sqrt method', function() {
+      new Decimal('9').sqrt().valueOf().should.be.exactly('3');
+    });
+
+    it('should have an equals method', function() {
       new Decimal('2').equals(new Decimal('2')).should.be.exactly(true);
       new Decimal('2').equals(new Decimal('3')).should.be.exactly(false);
     });
