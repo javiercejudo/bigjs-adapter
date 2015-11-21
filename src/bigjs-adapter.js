@@ -13,6 +13,7 @@ module.exports = {
   minus: minus,
   times: times,
   div: div,
+  mod: mod,
   pow: pow,
   sqrt: sqrt,
   equals: equals,
@@ -43,6 +44,10 @@ function times(x, y) {
 
 function div(x, y) {
   return x.div(y);
+}
+
+function mod(x, y) {
+  return x.mod(y);
 }
 
 function pow(x, y) {
